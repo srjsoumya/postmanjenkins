@@ -1,0 +1,185 @@
+{
+	"variables": [],
+	"info": {
+		"name": "postman",
+		"_postman_id": "2940e18e-9b4d-8afe-57d7-27a8826592f8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "postman",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"tests[\"Successful POST request\"] = responseCode.code === 200 || responseCode.code === 202;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:3000/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Api_testing\"\n  }"
+				},
+				"description": "this is dummy project"
+			},
+			"response": []
+		},
+		{
+			"name": "postman copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"tests[\"Successful POST request\"] = responseCode.code === 200 || responseCode.code === 202;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:3000/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Api_testing\"\n  }"
+				},
+				"description": "this is dummy project"
+			},
+			"response": []
+		},
+		{
+			"name": "postman copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"tests[\"Successful POST request\"] = responseCode.code === 200 || responseCode.code === 202;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:3000/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Api_testing\"\n  }"
+				},
+				"description": "this is dummy project"
+			},
+			"response": []
+		},
+		{
+			"name": "postman copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"tests[\"Successful POST request\"] = responseCode.code === 200 || responseCode.code === 202;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:3000/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Api_testing\"\n  }"
+				},
+				"description": "this is dummy project"
+			},
+			"response": []
+		},
+		{
+			"name": "postman",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"tests[\"Successful Get request\"] = responseCode.code === 200;",
+							"",
+							"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:3000/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 5000,\n        \"title\": \"json-server\",\n        \"author\": \"typicode\"\n    }"
+				},
+				"description": "this is dummy project"
+			},
+			"response": []
+		}
+	]
+}
